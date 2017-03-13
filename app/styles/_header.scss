@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-$header-base: #efefef;
+$header-base: white;
 $blue-base: #0498f2;
 $color-header: black;
 $p-size: 2em;
@@ -10,7 +10,7 @@ header {
 	color: $color-header;
 	padding: 1em;
 	img {
-		width: 20%;
+		width: 60%;
 	}
 	p {
 		font-size: $p-size;
