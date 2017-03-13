@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$blue-base: #0498f2;
+$color: black;
+$a-color: #efefef;
+$b-color: #62a4f7;
+$c-color: #62a4f7;
+$d-color: #efefef;
+
+.fcontent {
+	background-color: white;
+	color: $color;
+}
+
+.a {
+	background-color: $a-color;
+	font-family: 'Roboto', sans-serif;
+	height: 20em;
+}
+.b {
+	background-color: $b-color;
+	height: 20em;
+}
+.c {
+	background-color: $c-color;
+	height: 20em;
+}
+.d {
+	background-color: $d-color;
+	height: 20em;
+}

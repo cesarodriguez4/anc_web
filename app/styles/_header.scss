@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+$header-base: #fff;
+$blue-base: #0498f2;
+$color-header: black;
+$p-size: 2em;
+
+header {
+	background-color: $header-base;
+	font-family: 'Fjalla One', sans-serif;
+	color: $color-header;
+	padding: 1em;
+	p {
+		font-size: $p-size;
+	}
+	img, p {
+		display: inline-block;
+	}
+	nav {
+		 display: inline-block;
+	}
+}
