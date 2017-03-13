@@ -209,10 +209,4 @@ gulp.task('style', function() {
   });
 });
 
-gulp.task('copy:dist', function() {
-  return gulp.src(['./dist/**/*'])
-  .pipe(gulp.dest('../public/dist'));
-});
-
-
 gulp.task('default', ['build']);
