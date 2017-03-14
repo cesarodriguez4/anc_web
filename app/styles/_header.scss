@@ -3,6 +3,7 @@ $header-base: white;
 $blue-base: #0498f2;
 $color-header: black;
 $p-size: 2em;
+$p-color: #093d4a;
 
 header {
 	background-color: $header-base;
@@ -14,11 +15,16 @@ header {
 	}
 	p {
 		font-size: $p-size;
+		color: $p-color;
+		line-height: 2;
 	}
 	img, p {
 		display: inline-block;
 	}
 	nav {
 		 display: inline-block;
+	}
+	span {
+		cursor: pointer;
 	}
 }

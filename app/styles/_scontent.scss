@@ -1,7 +1,13 @@
 $blue-base: #0498f2;
+$title-color: white;
+$slogan-color: #285f96;
 .scontent {
-	background-color: $blue-base;
+	background-image: url('../images/racks-industriales.jpg');
 	h1 {
-		margin-top: 14em;
+		margin-top: 12em;
+		color: $title-color;
+		margin-bottom: 3em;
+		background-color: $slogan-color;
+		padding: 0.5em;
 	}
 }
