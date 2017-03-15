@@ -10,7 +10,6 @@
  */
 angular
   .module('app', [
-    'ngAnimate',
     'ngRoute'
   ])
   .config(function ($routeProvider) {
@@ -19,6 +18,11 @@ angular
         templateUrl: 'views/index.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
+      })
+      .when('/empresa', {
+        templateUrl: 'views/empresa.html', 
+        controller: 'Empresa', 
+        controllerAs: 'emp'
       })
       .otherwise({
         redirectTo: '/'

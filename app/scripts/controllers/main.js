@@ -14,4 +14,7 @@ angular.module('app')
       'AngularJS',
       'Karma'
     ];
+  })
+  .controller('Empresa', function() {
+  	this.hey = "Hey";
   });
