@@ -1,0 +1,27 @@
+$base-background: #fafafa;
+$border: 1px solid #eaeaea;
+$color-button: #262626;
+.tcontent {
+ background-color: $base-background; 
+ 
+ input[type="email"], input[type="text"], textarea {
+ 	border: $border;
+ 	padding: 1em;
+ 	border-radius: 5px;
+ }
+ input[type="submit"] {
+ 	background-color: $color-button;
+ 	color: white;
+ 	padding: 1em;
+ 	border: 0; 
+ 	border-radius: 5px;
+ }
+
+ .row {
+ 	margin-top: 2em;
+ 	margin-bottom: 2em;
+ }
+ .way {
+ 	margin-bottom: 1em;
+ }
+}
