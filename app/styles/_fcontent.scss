@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 $blue-base: #0498f2;
 $color: black;
-$a-color: #efefef;
-$b-color: #337ab7;
-$c-color: #337ab7;
-$d-color: #efefef;
 
 .fcontent {
 	background-color: white;
@@ -12,20 +7,11 @@ $d-color: #efefef;
 	line-height: 25;
 }
 
-.a {
-	background-color: $a-color;
+.avenues {
+	background-color: #fafafa;
 	font-family: 'Roboto', sans-serif;
 	height: 25em;
-}
-.b {
-	background-color: $b-color;
-	height: 25em;
-}
-.c {
-	background-color: $c-color;
-	height: 25em;
-}
-.d {
-	background-color: $d-color;
-	height: 25em;
+	p {
+		width: 100%;
+	}
 }
