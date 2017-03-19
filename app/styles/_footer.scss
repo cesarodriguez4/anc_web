@@ -1,0 +1,12 @@
+$up-back: #ececec;
+$dwn-back: #e0e0e0;
+
+.footerup {
+  background-color: $up-back;
+  padding: 2em;
+}
+
+.footerdwn {
+  background-color: $dwn-back;
+  padding: 1em;
+}
