@@ -10,7 +10,8 @@
  */
 angular
   .module('app', [
-    'ngRoute'
+    'ngRoute',
+    'ngAnimate'
   ])
   .config(function ($routeProvider) {
     $routeProvider
