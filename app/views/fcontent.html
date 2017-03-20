@@ -1,18 +1,21 @@
 <div class="fcontent content row">
+	<div class="row text-center">
+		<h1>Son muchas las razones para confiar en nosotros</h1>
+	</div>
 	<div class="row">
-		<div ng-mouseover="main.a = main.a1p" ng-mouseleave="main.a = main.a1" class="col-md-6 avenues">
-			<p class="text-center">{{main.a}}</p>
+		<div ng-mouseover="main.a = main.a1p" ng-mouseleave="main.a = main.a1" ng-style="{'background': main.a.bg}" class="col-md-6 avenues">
+			<p class="text-center">{{main.a.text}}</p>
 		</div>
-		<div ng-mouseover="main.b = main.b1p" ng-mouseleave="main.b = main.b1" class="col-md-6 avenues">
-			<p class="text-center">{{main.b}}</p>
+		<div ng-mouseover="main.b = main.b1p" ng-style="{'background': main.b.bg}" ng-mouseleave="main.b = main.b1" class="col-md-6 avenues">
+			<p class="text-center">{{main.b.text}}</p>
 		</div>
 	</div>
 	<div class="row">
-		<div ng-mouseover="main.c = main.c1p" ng-mouseleave="main.c = main.c1" class="col-md-6 avenues">
-			<p class="text-center">{{main.c}}</p>
+		<div ng-mouseover="main.c = main.c1p" ng-style="{'background': main.c.bg}" ng-mouseleave="main.c = main.c1" class="col-md-6 avenues">
+			<p class="text-center">{{main.c.text}}</p>
 		</div>
-		<div ng-mouseover="main.d = main.d1p" ng-mouseleave="main.d = main.d1" class="col-md-6 avenues">
-			<p class="text-center">{{main.d}}</p>
+		<div ng-mouseover="main.d = main.d1p" ng-style="{'background': main.d.bg}" ng-mouseleave="main.d = main.d1" class="col-md-6 avenues">
+			<p class="text-center">{{main.d.text}}</p>
 		</div>
 	</div>
 </div>
