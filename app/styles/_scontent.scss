@@ -1,5 +1,6 @@
 $title-color: white;
 $slogan-color: rgba(169, 169, 169, 0.52);
+$family: 'Fjalla One', sans-serif;
 .scontent {
 	background:url('../images/racks-industriales.jpg') no-repeat center center fixed;
 	height: 100%;
@@ -13,5 +14,7 @@ $slogan-color: rgba(169, 169, 169, 0.52);
 	h1 {
 		color: $title-color;
 		padding: 17% 0% 22% 0%;
+		font-family: $family;
+		text-shadow: 1px 1px black;
 	}
 }

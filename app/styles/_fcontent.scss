@@ -1,20 +1,23 @@
 $blue-base: #0498f2;
 $color: black;
+$family: 'Open Sans Condensed', sans-serif;
 
 .fcontent {
 	background-color: white;
 	color: $color;
+	font-family: $family;
 }
-
+	h1 {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
 .avenues {
 	background-color: #fafafa;
-
 	height: 25em;
 	p {
 		width: 80%;
 		margin-left: 10%;
-		margin-top: 20%;
-		font-family: 'Roboto', sans-serif;
+		margin-top: 22%;
 		font-size: 1.5em;
 	}
 }

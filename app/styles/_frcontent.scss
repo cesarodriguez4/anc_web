@@ -1,10 +1,12 @@
 $base-background: #fafafa;
 $font-color: black;
+$family: 'Open Sans Condensed', sans-serif;
 .frcontent {
 	background-color: $base-background;
 	color: $font-color;
-	h1 {
-		margin-top: 10%;
+	font-family: $family;
+	.frtitle {
+		background-color: white
 	}
 	img {
 		margin-bottom: 30%;
