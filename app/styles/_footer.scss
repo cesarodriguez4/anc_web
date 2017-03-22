@@ -1,13 +1,36 @@
 $up-back: #ececec;
 $dwn-back: #e0e0e0;
+$font: 'Fjalla One', sans-serif;
 
 .footerup {
   background-color: $up-back;
   padding: 2em;
+  font-family: $font;
 }
 
 .footerdwn {
   background-color: $dwn-back;
   padding: 1em;
   font-family: 'Lobster', cursive;
+}
+
+.fa-facebook-official:hover {
+	color: #292980;
+    font-size: 4em;
+    transition: 300ms ease-in-out all;
+    cursor: pointer;
+}
+
+.fa-twitter:hover {
+	color:#5395ff;
+	font-size: 4em;
+    transition: 300ms ease-in-out all;
+    cursor: pointer;
+}
+
+.fa-instagram:hover {
+	color: #c73778;
+	font-size: 4em;
+    transition: 300ms ease-in-out all;
+    cursor: pointer;
 }

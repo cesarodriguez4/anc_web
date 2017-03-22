@@ -1,9 +1,10 @@
 $base-background: #fafafa;
 $border: 1px solid #eaeaea;
 $color-button: #262626;
+$font: 'Open Sans Condensed', sans-serif;
 .tcontent {
- background-color: $base-background; 
- 
+ background-color: $base-background;
+ font-family:  $font;
  input[type="email"], input[type="text"], textarea {
  	border: $border;
  	padding: 1em;
@@ -17,10 +18,6 @@ $color-button: #262626;
  	border-radius: 5px;
  }
 
- .row {
- 	margin-top: 2em;
- 	margin-bottom: 2em;
- }
  .way {
  	margin-bottom: 1em;
  }
