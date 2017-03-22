@@ -10,6 +10,26 @@
 angular.module('app')
   .controller('home', function () {
     var vm = this;
+
+    vm.title = [
+    "En Agronacional del Centro refrigeramos tu mercancía",
+    "Empresa líder en refrigeración y transporte en Carabobo", 
+    "Nuestros clientes así lo confirman", 
+    "Contáctanos al 0241-4511743"
+    ]; 
+
+    vm.i = 0;
+
+    setInterval(function() {
+      var it = vm.i;
+      if(it >= vm.title.length -1) {
+        vm.i = 0;
+      } else {
+        vm.i = it + 1;
+      }
+    }, 5000);
+
+    //Contenido de los cuadros con imagenes
     vm.a1 = {
       text: "Lideres en Refrigeracion",
       bg: "url('../images/avenues/alma_b.png')"
@@ -34,7 +54,4 @@ angular.module('app')
     bg: "white"};
     vm.d = vm.d1;
 
-  })
-  .controller('Empresa', function() {
-  	this.hey = "Hey";
   });
