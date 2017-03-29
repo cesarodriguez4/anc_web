@@ -1,0 +1,20 @@
+$bg: #fafafa;
+$bgp: white;
+$family: 'Open Sans Condensed', sans-serif;
+$hfamily: 'Fjalla One', sans-serif;
+.empresa {
+	background-color: $bg;
+	padding: 5%;
+	h1 {
+		font-family: $hfamily;
+		margin-bottom: 0;
+	}
+	p {
+		padding: 5%;
+		font-size: 1.5em;
+		text-align: justify;
+		box-sizing: content-box;
+		background-color: $bgp;
+		font-family: $family;
+	}
+}

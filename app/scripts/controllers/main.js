@@ -8,7 +8,7 @@
  * Controller of the publicApp
  */
 angular.module('app')
-  .controller('home', function () {
+  .controller('home',['$scope', function ($scope) {
     var vm = this;
 
     vm.title = [
@@ -23,16 +23,20 @@ angular.module('app')
     setInterval(function() {
       var it = vm.i;
       if(it >= vm.title.length -1) {
-        vm.i = 0;
+        $scope.$apply(function(){
+           vm.i = 0;
+         }); 
       } else {
-        vm.i = it + 1;
+        $scope.$apply(function(){
+           vm.i = it + 1;
+         }); 
       }
     }, 5000);
 
     //Contenido de los cuadros con imagenes
     vm.a1 = {
       text: "Lideres en Refrigeracion",
-      bg: "url('../images/avenues/alma_b.png')"
+      bg: "url('../images/avenues/091.JPG')"
     };
     vm.a1p = { text:"Es considerada hoy por hoy la empresa de Almacenamiento Congelado y refrigerado de más rápido crecimiento en el centro del país y la empresa de Transporte Refrigerado más grande de Venezuela.",
               bg: "white"};
@@ -54,4 +58,4 @@ angular.module('app')
     bg: "white"};
     vm.d = vm.d1;
 
-  });
+  }]);
