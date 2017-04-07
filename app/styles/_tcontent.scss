@@ -18,8 +18,15 @@ $font: 'Open Sans Condensed', sans-serif;
  	border-radius: 5px;
  	margin-bottom: 10%;
  }
-
  .way {
  	margin-bottom: 1em;
  }
+}
+@media (max-width: 600px) {
+    .tcontent {
+    	h2{
+    		font-size: 20px;
+    		text-align: center;
+    	}
+    }
 }

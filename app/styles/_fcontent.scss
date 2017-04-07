@@ -34,3 +34,8 @@ $family: 'Open Sans Condensed', sans-serif;
 		font-family: $family;
 	}
 }
+@media (max-width: 600px) {
+    .avenues {
+    	padding: 2em;    	
+    }
+}
