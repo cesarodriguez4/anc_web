@@ -29,7 +29,18 @@ header {
 
 .navbar-toggle {
 	border: 1px solid rgb(221, 223, 224);
+	margin-top: 1em;
+	margin-right: 0;
+	float: none;
 	.icon-bar {
 	background-color: #3fa7ed;
 	}
+}
+
+@media (max-width: 980px) {
+    header {
+    	img {
+    		display: none;
+    	}
+    }
 }
