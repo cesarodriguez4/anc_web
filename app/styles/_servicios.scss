@@ -1,0 +1,22 @@
+$family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.servicios {
+	.boxes-cont {
+		background-color: #fbfbfb;
+	    padding: 4%;
+	    text-align: left;
+	    border: 1px solid #dadada;
+	    border-radius: 8px 8px 1px 1px;
+	    border-bottom: none;
+	    box-shadow: 5px 5px 10px #f1f1f1;
+	    div {
+	    	font-family: $family;
+	    }
+	}
+
+	.consider {
+		margin: 5% 0% 5% 0%;
+	    background-color: #ffffbb;
+	    border-radius: 21px 20px 0px 20px;
+	    font-family: "Open Sans Condensed", sans-serif;
+	}
+}
