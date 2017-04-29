@@ -1,14 +1,13 @@
-$header-base: white;
+$header-base: #5ca0dc;
 $blue-base: #0498f2;
 $color-header: black;
 $p-size: 2em;
-$p-color: #093d4a;
+$p-color: white;
 
 header {
 	background-color: $header-base;
 	font-family: 'Fjalla One', sans-serif;
 	color: $color-header;
-	padding: 0.5em;
 	img {
 		width: 100%;
 	}
@@ -23,6 +22,9 @@ header {
 	.navs {
 		cursor: pointer;
 		line-height: 4;
+		a {
+			color: white;
+		}
 	}
 }
 

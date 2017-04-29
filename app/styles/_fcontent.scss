@@ -5,6 +5,10 @@ $family: 'Open Sans Condensed', sans-serif;
 .fcontent {
 	background-color: white;
 }
+.blue-base {
+	background-color: #5ca0dc;
+	color: white;
+}
 	h1 {
 		margin-top: 5%;
 		margin-bottom: 5%;
@@ -13,20 +17,20 @@ $family: 'Open Sans Condensed', sans-serif;
 .avenues {
 	background-color: #fafafa;
 	transition: 1s linear all;
-	opacity: 0.8;
+	opacity: 1;
 	transition: 200ms ease-in-out all;
 	font-size: 16px;
 	padding: 10em; 
 	p {
 		color: white;
-		font-size: 20px;
-		text-shadow: 0px 0px 3px black;
+		font-size: 1.8em;
+		text-shadow: 2px 2px 1px black;
 		font-family: 'Fjalla One', sans-serif;
 	}
 }
 
 .avenues:hover {
-	opacity: 1;
+	opacity: 0.7;
 	background: #f5f5f5 !important;
 	p {
 		color: black;
