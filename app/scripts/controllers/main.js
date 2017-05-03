@@ -14,15 +14,15 @@ angular.module('app')
     vm.title = [
     {
       text:"En Agronacional del Centro refrigeramos tu mercancía",
-      image: "../../images/galeria/095.JPG"
+      image: "../../images/086.JPG"
     },
     {
       text: "Empresa líder en refrigeración y transporte en Carabobo",
-      image: "../../images/086.JPG"
+      image: "../../images/growth.jpg"
     }, 
     {
       text: "Refrigera tu producto aquí",
-      image: "../../images/galeria/092.JPG"
+      image: "../../images/galeria/097.JPG"
      }, 
     {
       text: "Contáctanos al 0241-4511743", 
