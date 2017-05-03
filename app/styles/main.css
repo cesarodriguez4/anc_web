@@ -113,7 +113,7 @@ h1 {
 }
 
 .tcontent {
-  background-color: #fafafa;
+  background-color: #fff;
   font-family: "Open Sans Condensed", sans-serif;
 }
 
@@ -188,13 +188,14 @@ h1 {
 }
 
 .footerup {
-  background-color: #ececec;
+  background-color: #5ca0dc;
   padding: 2em;
   font-family: "Fjalla One", sans-serif;
+  color: #36354c;
 }
 
 .footerdwn {
-  background-color: #e0e0e0;
+  background-color: #5e8bb3;
   padding: 1em;
   font-family: 'Lobster', cursive;
 }
@@ -238,7 +239,7 @@ h1 {
   font-size: 1.5em;
   text-align: justify;
   box-sizing: content-box;
-  background-color: #c6cee8;
+  background-color: #fff;
   font-family: "Open Sans Condensed", sans-serif;
 }
 

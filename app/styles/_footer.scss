@@ -1,11 +1,12 @@
-$up-back: #ececec;
-$dwn-back: #e0e0e0;
+$up-back: #5ca0dc;
+$dwn-back: #5e8bb3;
 $font: 'Fjalla One', sans-serif;
 
 .footerup {
   background-color: $up-back;
   padding: 2em;
   font-family: $font;
+  color: #36354c;
 }
 
 .footerdwn {
