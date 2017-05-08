@@ -229,6 +229,10 @@ h1 {
   padding: 5%;
 }
 
+.empresa img {
+  width: 100%;
+}
+
 .empresa h1 {
   font-family: "Fjalla One", sans-serif;
   margin-bottom: 0;
@@ -241,6 +245,10 @@ h1 {
   box-sizing: content-box;
   background-color: #fff;
   font-family: "Open Sans Condensed", sans-serif;
+}
+
+.servicios img {
+  width: 100%;
 }
 
 .servicios .boxes-cont {

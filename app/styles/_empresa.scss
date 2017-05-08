@@ -5,6 +5,9 @@ $hfamily: 'Fjalla One', sans-serif;
 .empresa {
 	background-color: $bg;
 	padding: 5%;
+	img {
+		width: 100%;
+	}
 	h1 {
 		font-family: $hfamily;
 		margin-bottom: 0;
