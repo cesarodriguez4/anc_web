@@ -8,7 +8,7 @@
  * Controller of the publicApp
  */
 angular.module('app')
-  .controller('home',['$scope', function ($scope) {
+  .controller('home',['$scope', '$http', function ($scope, $http) {
     var vm = this;
 
     vm.title = [
@@ -69,5 +69,17 @@ angular.module('app')
     vm.d1p = { text: "Además contamos con un excelente personal, Obrero, Técnico, Administrativo y Gerencial, capaz de reaccionar inmediatamente ante cualquier reto.",
     bg: "white"};
     vm.d = vm.d1;
+    vm.sendQuery = function() {
+      const nombre = vm.user;
+      const password = vm.password;
 
+      $http.post('https://api-agronacional.herokuapp.com/login',
+        {nombre, password})
+      .then(success => {
+        console.log(success.data);
+      }, error => {
+        console.log(error);
+      });
+    };
+    
   }]);

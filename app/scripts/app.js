@@ -37,7 +37,12 @@ angular
       .when('/acceso', {
         templateUrl: 'views/acceso.html',
         controller: 'home',
-        controllerAs: 'emp'
+        controllerAs: 'acceso'
+      })
+      .when('/perfil', {
+        templateUrl: 'views/perfil.html',
+        controller: 'home',
+        controllerAs: 'perfil'
       })
       .otherwise({
         redirectTo: '/'

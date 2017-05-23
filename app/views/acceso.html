@@ -1,0 +1,12 @@
+<div class="row acceso">
+	<div>
+		<nav id="login" class="acceso p-5">
+			<h3>Ingresa a tu cuenta</h3>
+			<form name="Form">
+				<input class="d-block form-control" type="email" name="email" ng-model="acceso.user" placeholder="Email" required>
+				<input class="d-block form-control mb-2 mt-2" type="password" ng-model="acceso.password" name="password" placeholder="Contraseña" required>
+				<button class="btn btn-secondary mt-2 mb-2" ng-click="acceso.sendQuery()" ng-disabled="!Form.email.$valid">Entrar</button>
+			</form>
+		</nav>
+	</div>
+</div>
