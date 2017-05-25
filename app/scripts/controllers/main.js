@@ -34,6 +34,25 @@ angular.module('app')
       vm.vision = datos.vision;
       vm.mision = datos.mision;
 
+      vm.title = [
+    {
+      text:vm.muno,
+      image: "../../images/086.JPG"
+    },
+    {
+      text: vm.mdos,
+      image: "../../images/growth.jpg"
+    }, 
+    {
+      text: vm.mtres,
+      image: "../../images/galeria/097.JPG"
+     }, 
+    {
+      text: vm.mcuatro, 
+      image: "../../images/galeria/gerente.jpg"
+    }
+    ]; 
+
     }, () => {
       console.log('Ha ocurrido un error recibiendo datos.');
     });
@@ -76,24 +95,7 @@ angular.module('app')
         });
     };
 
-    vm.title = [
-    {
-      text:"En Agronacional del Centro refrigeramos tu mercancía",
-      image: "../../images/086.JPG"
-    },
-    {
-      text: "Empresa líder en refrigeración y transporte en Carabobo",
-      image: "../../images/growth.jpg"
-    }, 
-    {
-      text: "Refrigera tu producto aquí",
-      image: "../../images/galeria/097.JPG"
-     }, 
-    {
-      text: "Contáctanos al 0241-4511743", 
-      image: "../../images/galeria/gerente.jpg"
-    }
-    ]; 
+    
 
     vm.i = 0;
 
