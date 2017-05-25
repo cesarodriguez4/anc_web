@@ -8,8 +8,73 @@
  * Controller of the publicApp
  */
 angular.module('app')
-  .controller('home',['$scope', '$http', function ($scope, $http) {
+  .controller('home',['$scope', '$http', '$cookies', '$location', function ($scope, $http, $cookies, $location) {
     var vm = this;
+
+    $scope.perfil = true;
+
+    vm.islogged = false;
+    if ($cookies.get('session')) {
+      vm.islogged = true;
+    }
+    // Perfil & contenido
+    $http.get('https://agroapi.herokuapp.com/data')
+    .then(success => {
+      const datos = success.data[0];
+      vm.muno = datos.bienvenida_1;
+      vm.mdos = datos.bienvenida_2;
+      vm.mtres = datos.bienvenida_3;
+      vm.mcuatro = datos.bienvenida_4;
+      vm.runo = datos.razones_1;
+      vm.rdos = datos.razones_2;
+      vm.rtres = datos.razones_3;
+      vm.rcuatro = datos.razones_4;
+      vm.natera = datos.cita;
+      vm.nosotros = datos.quienes_somos;
+      vm.vision = datos.vision;
+      vm.mision = datos.mision;
+
+    }, () => {
+      console.log('Ha ocurrido un error recibiendo datos.');
+    });
+
+    function sendUp(obj, disabled) {
+      $http.post('https://agroapi.herokuapp.com/updateData',
+        obj).then( () => {
+          disabled = true;
+        }, error => {
+          console.log(error);
+        });
+    }
+
+    vm.mensajeLog = "El campo ha sido enviado satisfactoriamente";
+    vm.showMensajeLog = false;
+
+    vm.closeMensajeLog = () => {
+      vm.showMensajeLog = false;
+    }
+
+    vm.openMessage = () => {
+      vm.showMensajeLog = true;
+    }
+
+    vm.emaildelivered = () => {
+      alert('Tu correo ha sido enviado satisfactoriamente');
+    }
+
+      vm.enviarMensaje = () => {
+          const emailNombre = vm.emailNombre;
+          const emailCorreo = vm.emailCorreo;
+          const emailAsunto = vm.emailAsunto;
+          const emailMensaje = vm.emailMensaje;
+
+      $http.post('https://agroapi.herokuapp.com/email',
+        {emailNombre, emailCorreo, emailAsunto, emailMensaje}, response => {
+          console.log(response);
+        }, error => {
+          console.log(error);
+        });
+    };
 
     vm.title = [
     {
@@ -69,17 +134,62 @@ angular.module('app')
     vm.d1p = { text: "Además contamos con un excelente personal, Obrero, Técnico, Administrativo y Gerencial, capaz de reaccionar inmediatamente ante cualquier reto.",
     bg: "white"};
     vm.d = vm.d1;
+
+
+    //Login
     vm.sendQuery = function() {
-      const nombre = vm.user;
+      const usuario = vm.user;
       const password = vm.password;
 
-      $http.post('https://api-agronacional.herokuapp.com/login',
-        {nombre, password})
+      $http.post('https://agroapi.herokuapp.com/login',
+        {usuario, password})
       .then(success => {
-        console.log(success.data);
+        const res = success.data;
+        if (res.error) {
+          vm.error = res.error;
+        } else {
+           $cookies.put('session', true);
+           $location.path('/perfil');
+        }
       }, error => {
-        console.log(error);
+        vm.error = error;
       });
     };
+
+    // Actualizar informacion
+    vm.update = query => {
+      if (query === 'main') {
+        sendUp({
+          bienvenida_1: vm.muno,
+          bienvenida_2: vm.mdos,
+          bienvenida_3: vm.mtres,
+          bienvenida_4: vm.mcuatro
+        }, vm.button1);
+      } else if (query === 'razones') {
+        sendUp({
+          razones_1: vm.runo,
+          razones_2: vm.rdos,
+          razones_3: vm.rtres,
+          razones_4: vm.ruatro
+        }, vm.button2);
+      } else if (query === 'cita') {
+         sendUp({
+          cita: vm.natera
+        }, vm.button3);
+      } else {
+         sendUp({
+          quienes_somos: vm.nosotros,
+          mision: vm.mision,
+          vision: vm.vision
+        }, vm.button4);
+      }
+    };
+
+    // Enviar correo
+
+
     
+
+
+
   }]);

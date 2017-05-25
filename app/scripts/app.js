@@ -10,7 +10,7 @@
  */
 angular
   .module('app', [
-    'ngRoute'
+    'ngRoute', 'ngCookies'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -32,7 +32,7 @@ angular
       .when('/contacto', {
         templateUrl: 'views/tcontent.html',
         controller: 'home',
-        controllerAs: 'emp'
+        controllerAs: 'email'
       })
       .when('/acceso', {
         templateUrl: 'views/acceso.html',

@@ -9,16 +9,19 @@
 		<form class="col-md-6">
 			<div class="row">
 				<div class="row">
-					<input class="col-md-9 col-xs-12 way" placeholder="Tu nombre" type="text" name="nombre"
+					<input class="col-md-9 col-xs-12 way" ng-model="email.emailNombre" placeholder="Tu nombre" type="text" name="nombre"
 				</div>
 				<div class="row">
-					<input class="col-md-9 col-xs-12 way" placeholder="Tu correo" type="email" name="email"
+					<input class="col-md-9 col-xs-12 way" ng-model= "email.emailAsunto" placeholder="Asunto" type="text" name="asunto"
 				</div>
 				<div class="row">
-					<textarea class="col-md-9 col-xs-12 way" placeholder="Mensaje..."></textarea>
+					<input class="col-md-9 col-xs-12 way" ng-model="email.emailCorreo" placeholder="Tu correo" type="email" name="email"
 				</div>
 				<div class="row">
-					<input class="col-md-3 way" type="submit" value="Enviar correo">
+					<textarea class="col-md-9 col-xs-12 way" ng-model="email.emailMensaje" placeholder="Mensaje..."></textarea>
+				</div>
+				<div class="row">
+					<input class="col-md-3 way" ng-click="email.enviarMensaje(); email.emaildelivered();" type="submit" value="Enviar correo">
 				</div>				
 			</div>
 		</form>

@@ -1,45 +1,48 @@
-<div class="perfil">
+<div class="text-center must-login" ng-if="perfil.islooged === false">Debes iniciar sesion para ver este contenido</div>
+<div ng-if="perfil.islogged === true" class="perfil">
+<div class="mensajeLog" ng-if="perfil.showMensajeLog"><i ng-click="perfil.closeMensajeLog()" class="fa fa-times"></i>{{perfil.mensajeLog}}</div>
 	<h2 class="text-center">Panel administrativo</h2>
+	<h3>Control de Contenido</h3>
 	<div class="form-group">
 		<h4>Mensajes de Bienvenida</h4>
 		<label for="1">#1</label>
-		<input class="form-control" type="text" name="1">
+		<input class="form-control" ng-model = "perfil.muno" type="text" name="1">
 		<label for="2">#2</label>
-		<input class="form-control" type="text" name="2">
+		<input class="form-control" ng-model = "perfil.mdos" type="text" name="2">
 		<label for="3">#3</label>
-		<input class="form-control" type="text" name="3">
+		<input class="form-control" ng-model = "perfil.mtres" type="text" name="3">
 		<label for="4">#4</label>
-		<input class="form-control" type="text" name="4">
-		<button class="btn btn-success">Actualizar</button>
+		<input class="form-control" ng-model = "perfil.mcuatro" type="text" name="4">
+		<button class="btn btn-success" ng-click="perfil.update('main'); perfil.openMessage();">Actualizar</button>
 	</div>
 
 	<div class="form-group">
 		<h4>Razones para confiar en nosotros</h4>
 		<label for="1">#1</label>
-		<input class="form-control" type="text" name="1">
+		<input class="form-control" ng-model="perfil.runo" type="text" name="1">
 		<label for="2">#2</label>
-		<input class="form-control" type="text" name="2">
+		<input class="form-control" ng-model="perfil.rdos" type="text" name="2">
 		<label for="3">#3</label>
-		<input class="form-control" type="text" name="3">
+		<input class="form-control" ng-model="perfil.rtres" type="text" name="3">
 		<label for="4">#4</label>
-		<input class="form-control" type="text" name="4">
-		<button class="btn btn-success">Actualizar</button>
+		<input class="form-control" ng-model="perfil.rcuatro" type="text" name="4">
+		<button class="btn btn-success" ng-click="perfil.update('razones'); perfil.openMessage();">Actualizar</button>
 	</div>
 
 	<div class="form-group">
 		<h4>Cita de Jose Natera</h4>
-		<input class="form-control" type="text" name="1">
-		<button class="btn btn-success">Actualizar</button>
+		<input class="form-control" ng-model="perfil.natera" type="text" name="1">
+		<button class="btn btn-success" ng-click="perfil.update('cita'); perfil.openMessage();">Actualizar</button>
 	</div>
 
 	<div class="form-group">
 		<h4>Quienes Somos?</h4>
-		<label for="sobreNosotros">Sobre Nosotros</label>
-		<input class="form-control" type="text" name="sobreNosotros">
+		<label for="sobreNosotros">Agronacional del centro...</label>
+		<input class="form-control" ng-model="perfil.nosotros" type="text" name="sobreNosotros">
 		<label for="mision">Mision</label>
-		<input class="form-control" type="text" name="sobreNosotros">
+		<input class="form-control" ng-model="perfil.mision" type="text" name="sobreNosotros">
 		<label for="vision">Vision</label>
-		<input class="form-control" type="text" name="sobreNosotros">
-		<button class="btn btn-success">Actualizar</button>
+		<input class="form-control" ng-model="perfil.vision" type="text" name="sobreNosotros">
+		<button class="btn btn-success" ng-click="perfil.update('quienes_somos'); perfil.openMessage();">Actualizar</button>
 	</div>
 </div>
