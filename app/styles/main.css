@@ -241,10 +241,16 @@ h1 {
 .empresa p {
   padding: 5%;
   font-size: 1.5em;
+  color: white;
   text-align: justify;
   box-sizing: content-box;
-  background-color: #fff;
+  background-color: #5ca0dc;
   font-family: "Open Sans Condensed", sans-serif;
+}
+
+.servicios {
+  background-color: #5ca0dc;
+  color: white;
 }
 
 .servicios img {
@@ -252,13 +258,10 @@ h1 {
 }
 
 .servicios .boxes-cont {
-  background-color: #fbfbfb;
+  color: black;
+  background-color: #faffb1;
   padding: 4%;
   text-align: left;
-  border: 1px solid #dadada;
-  border-radius: 8px 8px 1px 1px;
-  border-bottom: none;
-  box-shadow: 5px 5px 10px #f1f1f1;
 }
 
 .servicios .boxes-cont div {
@@ -266,9 +269,9 @@ h1 {
 }
 
 .servicios .consider {
+  color: black;
   margin: 5% 0% 5% 0%;
-  background-color: #ffffbb;
-  border-radius: 21px 20px 0px 20px;
+  background-color: #faffb1;
   font-family: "Open Sans Condensed", sans-serif;
 }
 
