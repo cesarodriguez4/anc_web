@@ -340,3 +340,9 @@ h1 {
 .delheader {
   margin-top: 5%;
 }
+
+@media screen and (max-width: 480px) {
+  .delheader {
+    margin-top: 25%;
+  }
+}
