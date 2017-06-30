@@ -71,15 +71,15 @@ angular.module('app')
 
     vm.closeMensajeLog = () => {
       vm.showMensajeLog = false;
-    }
+    };
 
     vm.openMessage = () => {
       vm.showMensajeLog = true;
-    }
+    };
 
     vm.emaildelivered = () => {
       alert('Tu correo ha sido enviado satisfactoriamente');
-    }
+    };
 
       vm.enviarMensaje = () => {
           const emailNombre = vm.emailNombre;

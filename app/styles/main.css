@@ -1,6 +1,8 @@
 header {
-  background-color: #5ca0dc;
-  font-family: 'Fjalla One', sans-serif;
+  background: url("https://static3.depositphotos.com/1003372/161/i/950/depositphotos_1617561-stock-photo-blue-ice-background.jpg");
+  font-family: 'Chau Philomene One', sans-serif;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.3em;
   color: black;
 }
 
@@ -25,6 +27,19 @@ header .navs {
 
 header .navs a {
   color: white;
+}
+
+header .marca {
+  font-family: 'Fredericka the Great';
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #404040;
+}
+
+header .marca p {
+  font-size: 1.5em;
+  vertical-align: middle;
+  color: #ececf7;
 }
 
 .navbar-toggle {
@@ -230,7 +245,8 @@ h1 {
 }
 
 .empresa img {
-  width: 100%;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .empresa h1 {
@@ -240,7 +256,7 @@ h1 {
 
 .empresa p {
   padding: 5%;
-  font-size: 1.5em;
+  font-size: 2em;
   color: white;
   text-align: justify;
   box-sizing: content-box;
@@ -319,4 +335,8 @@ h1 {
 .row {
   margin-right: 0px;
   margin-left: 0px;
+}
+
+.delheader {
+  margin-top: 5%;
 }

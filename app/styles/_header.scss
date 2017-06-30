@@ -5,8 +5,10 @@ $p-size: 2em;
 $p-color: white;
 
 header {
-	background-color: $header-base;
-	font-family: 'Fjalla One', sans-serif;
+	background: url('https://static3.depositphotos.com/1003372/161/i/950/depositphotos_1617561-stock-photo-blue-ice-background.jpg');
+	font-family: 'Chau Philomene One', sans-serif;
+	text-shadow: 1px 1px 1px black;
+    font-size: 1.3em;
 	color: $color-header;
 	img {
 		width: 100%;
@@ -25,6 +27,17 @@ header {
 		a {
 			color: white;
 		}
+	}
+	.marca {
+	  font-family: 'Fredericka the Great';
+      color: white;
+      font-weight: bold;
+      text-shadow: 1px 1px 10px #404040;
+      p {
+      	font-size: 1.5em;
+      	vertical-align: middle;
+      	color: #ececf7;
+      }
 	}
 }
 
