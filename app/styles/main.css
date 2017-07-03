@@ -1,5 +1,5 @@
 header {
-  background: url("https://static3.depositphotos.com/1003372/161/i/950/depositphotos_1617561-stock-photo-blue-ice-background.jpg");
+  background: url("../images/yelo.jpg");
   font-family: 'Chau Philomene One', sans-serif;
   text-shadow: 1px 1px 1px black;
   font-size: 1.3em;
@@ -7,7 +7,7 @@ header {
 }
 
 header img {
-  width: 100%;
+  width: 120%;
 }
 
 header p {
@@ -33,13 +33,13 @@ header .marca {
   font-family: 'Fredericka the Great';
   color: white;
   font-weight: bold;
-  text-shadow: 1px 1px 10px #404040;
+  text-shadow: 1px 1px 10px #000000;
 }
 
 header .marca p {
   font-size: 1.5em;
   vertical-align: middle;
-  color: #ececf7;
+  color: white;
 }
 
 .navbar-toggle {
