@@ -32,7 +32,6 @@ header .navs a {
 header .marca {
   font-family: 'Francois One';
   color: white;
-  text-shadow: 1px 1px 10px #000000;
 }
 
 header .marca p {
