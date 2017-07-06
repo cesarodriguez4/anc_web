@@ -30,7 +30,7 @@ header .navs a {
 }
 
 header .marca {
-  font-family: 'Kaushan Script';
+  font-family: 'Francois One';
   color: white;
   text-shadow: 1px 1px 10px #000000;
 }
@@ -355,5 +355,9 @@ h1 {
 @media screen and (max-width: 480px) {
   .delheader {
     margin-top: 25%;
+  }
+  .scontent h1 {
+    font-size: 20px;
+    padding: 0;
   }
 }
