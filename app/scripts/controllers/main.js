@@ -65,7 +65,7 @@ angular.module('app')
           console.log(error);
         });
     }
-
+    
     vm.mensajeLog = "El campo ha sido enviado satisfactoriamente";
     vm.showMensajeLog = false;
 

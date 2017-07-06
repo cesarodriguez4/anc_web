@@ -1,18 +1,21 @@
 $up-back: #5ca0dc;
-$dwn-back: #5e8bb3;
+$dwn-back: #1b1b1b;
 $font: 'Fjalla One', sans-serif;
 
 .footerup {
-  background-color: $up-back;
+  background: url('../images/yelo.jpg');
   padding: 2em;
   font-family: $font;
-  color: #36354c;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
 }
 
 .footerdwn {
   background-color: $dwn-back;
   padding: 1em;
   font-family: 'Lobster', cursive;
+  color: white;
 }
 
 .fa-facebook-official:hover {

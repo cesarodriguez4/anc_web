@@ -6,13 +6,15 @@ $family: 'Open Sans Condensed', sans-serif;
 	background-color: white;
 }
 .blue-base {
-	background-color: #5ca0dc;
+	background: url('../images/yelo.jpg');
 	color: white;
 }
 	h1 {
 		margin-top: 5%;
 		margin-bottom: 5%;
 		font-family: $family;
+		font-weight: bold;
+		text-shadow: 1px 1px 1px black;
 	}
 .avenues {
 	background-color: #fafafa;
@@ -32,6 +34,7 @@ $family: 'Open Sans Condensed', sans-serif;
 .avenues:hover {
 	opacity: 0.7;
 	background: #f5f5f5 !important;
+	font-size: small;
 	p {
 		color: black;
 		font-weight: normal;

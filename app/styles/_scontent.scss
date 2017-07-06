@@ -2,20 +2,16 @@ $title-color: white;
 $slogan-color: rgba(169, 169, 169, 0.52);
 $family: 'Fjalla One', sans-serif;
 .scontent {
-	//background:url('../images/galeria/gal.jpg') no-repeat center center fixed;
-	height: 100%;
-	.full {
-		-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    height:100%;
-	}
+	width: 100%;
+	padding: 3em;
 	h1 {
 		color: $title-color;
 		padding: 17% 0% 22% 0%;
 		font-family: $family;
 		text-shadow: 2px 3px 5px black;
+	}
+	.carousel {
+		width: 100%;
 	}
 }
 
