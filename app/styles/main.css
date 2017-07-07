@@ -55,6 +55,9 @@ header .marca p {
   header img {
     display: none;
   }
+  header .marca p {
+    font-size: 1em;
+  }
 }
 
 .fcontent {
