@@ -37,7 +37,7 @@ angular.module('app')
       vm.title = [
     {
       text:vm.muno,
-      image: "../../images/086.JPG"
+      image: "../../images/collage3.jpg"
     },
     {
       text: vm.mdos,
@@ -45,7 +45,7 @@ angular.module('app')
     }, 
     {
       text: vm.mtres,
-      image: "../../images/galeria/097.JPG"
+      image: "../../images/clock.jpg"
      }, 
     {
       text: vm.mcuatro, 
