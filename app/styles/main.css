@@ -31,13 +31,13 @@ header .navs a {
 
 header .marca {
   font-family: 'Francois One';
-  color: white;
+  color: #0081ff;
 }
 
 header .marca p {
   font-size: 1.5em;
   vertical-align: middle;
-  color: white;
+  color: #0081ff;
 }
 
 .navbar-toggle {
