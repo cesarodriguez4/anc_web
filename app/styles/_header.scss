@@ -7,7 +7,7 @@ $p-color: white;
 header {
 	background: url('../images/yelo.jpg');
 	font-family: 'Chau Philomene One', sans-serif;
-	text-shadow: 1px 1px 1px black;
+	text-shadow: 1px 1px 1px #020202;
     font-size: 1.3em;
 	color: $color-header;
 	img {
@@ -25,7 +25,7 @@ header {
 		cursor: pointer;
 		line-height: 4;
 		a {
-			color: white;
+			color: #0081ff;
 		}
 	}
 	.marca {
